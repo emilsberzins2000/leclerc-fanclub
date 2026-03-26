@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leclerc Fan Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Charles Leclerc fanpage</p>
+        <h1>Leclerc Fan Club</h1>
+        <p class="hero-text">
+          Memes, pain, pole positions, strategy horror stories, and the eternal hope that this is finally the year.
+        </p>
+        <nav class="nav">
+          <a href="#memes">Memes</a>
+          <a href="#stats">Fun stats</a>
+          <a href="forum.html">Forum</a>
+        </nav>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-label">Current mood</p>
+        <p class="hero-card-text" id="moodText">Purple sector with a side of Ferrari strategy anxiety.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="memes" class="section">
+      <h2>Memes corner</h2>
+      <p class="section-sub">The holy trinity: pace, pain, and post-race interviews.</p>
+
+      <div class="meme-grid">
+        <article class="meme-card">
+          <h3>"I am stupid" starter pack</h3>
+          <ul>
+            <li>On pole by half a second</li>
+            <li>Radio: "Plan G"</li>
+            <li>Medium - Medium - Wet - Slicks - Inters - Hards</li>
+            <li>Charles still finishes P2 and apologises to the team</li>
+          </ul>
+        </article>
+
+        <article class="meme-card">
+          <h3>Ferrari strategy be like</h3>
+          <p>
+            Lap 10: "Box now, box now"
+            <br />
+            Lap 11: Safety car.
+            <br />
+            Lap 12: "We are checking".
+          </p>
+        </article>
+
+        <article class="meme-card">
+          <h3>Leclerc fan experience</h3>
+          <ol>
+            <li>Quali: pure joy</li>
+            <li>Race start: cautious optimism</li>
+            <li>First stop: coping</li>
+            <li>Last 10 laps: therapy</li>
+          </ol>
+        </article>
+
+        <article class="meme-card">
+          <h3>Meanwhile in Monaco</h3>
+          <p>
+            Local resident tries to win his home race.
+            <br />
+            Weather, walls and weird Ferrari calls: "No."
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stats" class="section">
+      <h2>Fun stats (unofficial)</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-label">Poles vs wins energy</span>
+          <strong>"Too many Saturdays, not enough Sundays"</strong>
+          <p>Elite quali merchant, chaos magnet on race day (through no fault of his own 90% of the time).</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Favourite radio genre</span>
+          <strong>PainFM</strong>
+          <p>Featuring classics like "Why do we always do this?" and "Copy, understood".</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Official team message</span>
+          <strong>"We are checking"</strong>
+          <p>Also known as: we have no idea but we are committed to the bit.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Leclerc Fan Club — unofficial, unserious, full of coping memes.</span>
+      <a href="forum.html">Join the forum</a>
+    </div>
+  </footer>
+
+  <script>
+    const moods = [
+      'Purple sectors, red flags, and strategy blues.',
+      'Copium, hopium, and a suspicious amount of Monaco onboard replays.',
+      'Manifesting clean pit stops and functional radios.',
+      'Quali merchant, race day hostage.',
+      'Happy for Charles, confused by Ferrari.'
+    ];
+    const moodEl = document.getElementById('moodText');
+    moodEl.textContent = moods[Math.floor(Math.random() * moods.length)];
+  </script>
+</body>
+</html>

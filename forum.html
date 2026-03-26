@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leclerc Fan Club — Forum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero hero--small">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Leclerc Fan Club</p>
+        <h1>Forum</h1>
+        <p class="hero-text">
+          A tiny mock forum for Charles Leclerc fans to scream about tyres, strategies and pole laps.
+        </p>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="#threads">Threads</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="threads" class="section">
+      <h2>Hot threads (demo only)</h2>
+      <p class="section-sub">This is a frontend-only mock forum. No login, no backend, just vibes.</p>
+
+      <div class="thread-list">
+        <article class="thread-card">
+          <h3>Monaco pain support group</h3>
+          <p class="thread-meta">Started by <strong>@sector1wall</strong> · 324 replies</p>
+          <p>
+            Place to process every single Monaco weekend since F2. Share memes, theories, and coping playlists.
+          </p>
+          <ul class="thread-preview">
+            <li>"How did he anger the Monaco gods this much?"</li>
+            <li>Best meme wins a virtual hug from the club.</li>
+          </ul>
+        </article>
+
+        <article class="thread-card">
+          <h3>Rate Ferrari strategy out of 10 (no negatives allowed)</h3>
+          <p class="thread-meta">Started by <strong>@planZ</strong> · 512 replies</p>
+          <p>
+            Only rules: 1) be kind to Charles, 2) be honest about the pit wall, 3) numbers above 5 require evidence.
+          </p>
+        </article>
+
+        <article class="thread-card">
+          <h3>Favourite Charles radio moments</h3>
+          <p class="thread-meta">Started by <strong>@radioCheck</strong> · 189 replies</p>
+          <p>
+            From "I am stupid" to "No words" — drop your favourite quotes and context.
+          </p>
+        </article>
+
+        <article class="thread-card">
+          <h3>If Leclerc had Red Bull strategy for one season…</h3>
+          <p class="thread-meta">Started by <strong>@whatIf</strong> · 97 replies</p>
+          <p>
+            Pure speculation, cope and alternate timeline fanfic welcome.
+          </p>
+        </article>
+      </div>
+
+      <section class="new-thread">
+        <h3>Start a new thread (mock)</h3>
+        <p>
+          This is just a demo UI — it doesn’t save anything yet. But you can still use it to sketch thread ideas.
+        </p>
+        <form class="new-thread-form" onsubmit="event.preventDefault(); alert('Demo only — no actual posting yet.');">
+          <label>
+            Title
+            <input type="text" placeholder="Charles masterclass or Ferrari disasterclass?" required />
+          </label>
+          <label>
+            Your hot take
+            <textarea rows="4" placeholder="Type your Leclerc thoughts here..." required></textarea>
+          </label>
+          <button type="submit">Post (demo)</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Leclerc Fan Club forum mock — nothing is stored, everything is vibes.</span>
+      <a href="index.html">Back to home</a>
+    </div>
+  </footer>
+</body>
+</html>
